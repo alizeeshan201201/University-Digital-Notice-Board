@@ -37,7 +37,7 @@ jobs:
     needs: lint-job
     steps:
       - name: Welcome to Build Job
-        run: echo "Linting passed! Starting Parcel Build and Docker"
+        run: echo "Linting passed! Starting Parcel Build and Docker Image Build"
 
       - name: Clone Repository
         uses: actions/checkout@v4
@@ -53,14 +53,24 @@ jobs:
       - name: Build Website with Parcel
         run: npx parcel build "./src/index.html" --dist-dir "dist" --public-url "./" --no-cache
 
+      - name: Build Docker Image
+        run: docker build -t uni-notice-board:latest .
+
+  docker-push-job:
+    runs-on: ubuntu-latest
+    needs: build-job
+    steps:
+      - name: Clone Repository
+        uses: actions/checkout@v4
+
       - name: Login to Docker Hub
         uses: docker/login-action@v2
         with:
           username: ${{ secrets.DOCKER_HUB_USERNAME }}
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
-      - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest .
+      - name: Tag Docker Image
+        run: docker tag uni-notice-board:latest ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest
 
       - name: Push Docker Image to Docker Hub
         run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest
