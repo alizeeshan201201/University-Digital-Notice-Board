@@ -8,7 +8,7 @@ on:
 jobs:
   dev-deploy-job:
     runs-on: ubuntu-latest
-    enviorement: "University-notice-board"
+    environment: "University-notice-board"
     steps:
       - name: Deploy Develop Branch Code on Render 
         run: curl -x POST ${{secrets.RENDER_DEVELOP_DEP}}
