@@ -59,8 +59,3 @@ build-job:
 
     - name: Push Docker Image to Docker Hub
       run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest
-
-    - name: Optional: Test Run Docker Container
-      run: |
-        docker container run -d -p 8080:80 ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest
-        docker container ls

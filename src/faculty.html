@@ -1,10 +1,482 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Faculty</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty - University of Central Punjab</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <!-- your content -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">UCP - Digital Notice Board</a>
+                <nav>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="notices.html">Notices</a></li>
+                        <li><a href="exams.html">Exams</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faculty.html" class="active">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h1 class="section-title">Our Faculty</h1>
+                <p>Meet our distinguished faculty members who are committed to academic excellence and innovative research at University of Central Punjab.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section>
+        <div class="container">
+            <!-- Computer Science Department -->
+            <h2 class="section-title">Computer Science Department</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Muhammad Ali Khan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Muhammad Ali Khan</h3>
+                        <p class="faculty-role">Professor & Head of Department</p>
+                        <p class="faculty-department">Computer Science</p>
+                        <a href="mailto:muhammad.ali@ucp.edu.pk" class="faculty-email">muhammad.ali@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Ayesha Siddiqui</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Ayesha Siddiqui</h3>
+                        <p class="faculty-role">Associate Professor</p>
+                        <p class="faculty-department">Computer Science</p>
+                        <a href="mailto:ayesha.siddiqui@ucp.edu.pk" class="faculty-email">ayesha.siddiqui@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Ahmed Hassan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Ahmed Hassan</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Computer Science</p>
+                        <a href="mailto:ahmed.hassan@ucp.edu.pk" class="faculty-email">ahmed.hassan@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Fatima Zahra</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Fatima Zahra</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Computer Science</p>
+                        <a href="mailto:fatima.zahra@ucp.edu.pk" class="faculty-email">fatima.zahra@ucp.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mathematics Department -->
+            <h2 class="section-title" style="margin-top: 4rem;">Mathematics Department</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Bilal Ahmed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Bilal Ahmed</h3>
+                        <p class="faculty-role">Professor & Head of Department</p>
+                        <p class="faculty-department">Mathematics</p>
+                        <a href="mailto:bilal.ahmed@ucp.edu.pk" class="faculty-email">bilal.ahmed@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Khadija Noor</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Khadija Noor</h3>
+                        <p class="faculty-role">Associate Professor</p>
+                        <p class="faculty-department">Mathematics</p>
+                        <a href="mailto:khadija.noor@ucp.edu.pk" class="faculty-email">khadija.noor@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Usman Tariq</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Usman Tariq</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Mathematics</p>
+                        <a href="mailto:usman.tariq@ucp.edu.pk" class="faculty-email">usman.tariq@ucp.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Physics Department -->
+            <h2 class="section-title" style="margin-top: 4rem;">Physics Department</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Hassan Raza</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Hassan Raza</h3>
+                        <p class="faculty-role">Professor & Head of Department</p>
+                        <p class="faculty-department">Physics</p>
+                        <a href="mailto:hassan.raza@ucp.edu.pk" class="faculty-email">hassan.raza@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Sana Malik</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Sana Malik</h3>
+                        <p class="faculty-role">Associate Professor</p>
+                        <p class="faculty-department">Physics</p>
+                        <a href="mailto:sana.malik@ucp.edu.pk" class="faculty-email">sana.malik@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Omar Farooq</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Omar Farooq</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Physics</p>
+                        <a href="mailto:omar.farooq@ucp.edu.pk" class="faculty-email">omar.farooq@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Ayesha Yousuf</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Ayesha Yousuf</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Physics</p>
+                        <a href="mailto:ayesha.yousuf@ucp.edu.pk" class="faculty-email">ayesha.yousuf@ucp.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Chemistry Department -->
+            <h2 class="section-title" style="margin-top: 4rem;">Chemistry Department</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Imran Ali</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Imran Ali</h3>
+                        <p class="faculty-role">Professor & Head of Department</p>
+                        <p class="faculty-department">Chemistry</p>
+                        <a href="mailto:imran.ali@ucp.edu.pk" class="faculty-email">imran.ali@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Sara Khan</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Sara Khan</h3>
+                        <p class="faculty-role">Associate Professor</p>
+                        <p class="faculty-department">Chemistry</p>
+                        <a href="mailto:sara.khan@ucp.edu.pk" class="faculty-email">sara.khan@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Zain Abbas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Zain Abbas</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Chemistry</p>
+                        <a href="mailto:zain.abbas@ucp.edu.pk" class="faculty-email">zain.abbas@ucp.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Business Administration Department -->
+            <h2 class="section-title" style="margin-top: 4rem;">Business Administration Department</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Muhammad Umer</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Muhammad Umer</h3>
+                        <p class="faculty-role">Professor & Head of Department</p>
+                        <p class="faculty-department">Business Administration</p>
+                        <a href="mailto:muhammad.umer@ucp.edu.pk" class="faculty-email">muhammad.umer@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Mariam Sheikh</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Mariam Sheikh</h3>
+                        <p class="faculty-role">Associate Professor</p>
+                        <p class="faculty-department">Business Administration</p>
+                        <a href="mailto:mariam.sheikh@ucp.edu.pk" class="faculty-email">mariam.sheikh@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Daniyal Haider</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Daniyal Haider</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Business Administration</p>
+                        <a href="mailto:daniyal.haider@ucp.edu.pk" class="faculty-email">daniyal.haider@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Hira Ahmed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Hira Ahmed</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">Business Administration</p>
+                        <a href="mailto:hira.ahmed@ucp.edu.pk" class="faculty-email">hira.ahmed@ucp.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- English Department -->
+            <h2 class="section-title" style="margin-top: 4rem;">English Department</h2>
+            <div class="faculty-grid">
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Abdul Rehman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Abdul Rehman</h3>
+                        <p class="faculty-role">Professor & Head of Department</p>
+                        <p class="faculty-department">English</p>
+                        <a href="mailto:abdul.rehman@ucp.edu.pk" class="faculty-email">abdul.rehman@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👩‍💼</div>
+                                <p>Dr. Zahra Ali</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Zahra Ali</h3>
+                        <p class="faculty-role">Associate Professor</p>
+                        <p class="faculty-department">English</p>
+                        <a href="mailto:zahra.ali@ucp.edu.pk" class="faculty-email">zahra.ali@ucp.edu.pk</a>
+                    </div>
+                </div>
+
+                <div class="faculty-card">
+                    <div class="faculty-image">
+                        <div style="height: 100%; display: flex; align-items: center; justify-content: center; background-color: var(--bg-light); color: var(--text-light);">
+                            <div style="text-align: center;">
+                                <div style="font-size: 3rem;">👨‍💼</div>
+                                <p>Dr. Ali Raza</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="faculty-info">
+                        <h3 class="faculty-name">Dr. Ali Raza</h3>
+                        <p class="faculty-role">Assistant Professor</p>
+                        <p class="faculty-department">English</p>
+                        <a href="mailto:ali.raza@ucp.edu.pk" class="faculty-email">ali.raza@ucp.edu.pk</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About UCP</h3>
+                    <p>Leading Pakistani institution of higher education committed to excellence in teaching, research, and community service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="notices.html">Notices</a></p>
+                    <p><a href="exams.html">Exams</a></p>
+                    <p><a href="admissions.html">Admissions</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Lahore, Punjab, Pakistan</p>
+                    <p>📞 +92 (42) 111-123-456</p>
+                    <p>✉️ info@ucp.edu.pk</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">LinkedIn</a></p>
+                    <p><a href="#">Instagram</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 University of Central Punjab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
