@@ -1,10 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Notices</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Notices - University of Central Punjab</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <!-- your content -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">UCP - Digital Notice Board</a>
+                <nav>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="notices.html" class="active">Notices</a></li>
+                        <li><a href="exams.html">Exams</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h1 class="section-title">Academic Notices</h1>
+                <p>Stay updated with the latest announcements and important information from University of Central Punjab.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Notices Section -->
+    <section>
+        <div class="container">
+            <div class="notices-grid">
+                <div class="notice-card">
+                    <div class="notice-date">15 January, 2024</div>
+                    <h2 class="section-title">Spring 2024 Academic Notices</h2>
+                    <h3 class="notice-title">Examination Schedule Released</h3>
+                    <p class="notice-content">The examination schedule for the Spring 2024 semester has been released. Students are advised to check their respective department timetables and prepare accordingly. Detailed schedule is available on the university portal.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">12 January, 2024</div>
+                    <h3 class="notice-title">Library Hours Extended During Exam Period</h3>
+                    <p class="notice-content">The university library will remain open from 8:00 AM to 11:00 PM during the examination period to provide students with additional study time. Special study areas have been designated for group discussions. HEC digital resources are available 24/7.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">10 January, 2024</div>
+                    <h3 class="notice-title">Registration for Summer Courses Now Open</h3>
+                    <p class="notice-content">Registration for summer courses and workshops is now open. Students can register online through the student portal. Early bird discount available until 25 January, 2024. Courses approved by HEC Pakistan.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">8 January, 2024</div>
+                    <h3 class="notice-title">Guest Lecture on Artificial Intelligence</h3>
+                    <p class="notice-content">Department of Computer Science is organizing a guest lecture on "Recent Advances in Artificial Intelligence" by Dr. Ahmed Hassan from NUST Islamabad. The lecture is scheduled for 20 January, 2024, at 2:00 PM in the Main Auditorium.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">5 January, 2024</div>
+                    <h3 class="notice-title">Scholarship Applications Deadline Extended</h3>
+                    <p class="notice-content">The deadline for HEC merit-based scholarship applications has been extended to 30 January, 2024. Interested students should submit their applications with all required documents to the Financial Aid Office. Punjab Educational Endowment Fund scholarships also available.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">3 January, 2024</div>
+                    <h3 class="notice-title">Campus Recruitment Drive - February 2024</h3>
+                    <p class="notice-content">Major Pakistani companies including Engro, PTCL, and Systems Limited will be visiting campus for recruitment in February 2024. Students should update their resumes and register with the Placement Cell. Pre-placement training sessions will begin from 15 January, 2024.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">28 December, 2023</div>
+                    <h3 class="notice-title">New Research Center Inauguration</h3>
+                    <p class="notice-content">The university is inaugurating a new Research Center for Sustainable Development on 25 January, 2024. The center will focus on environmental research and sustainable technologies relevant to Pakistan's development goals.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">25 December, 2023</div>
+                    <h3 class="notice-title">Winter Break Schedule Announced</h3>
+                    <p class="notice-content">The university will observe winter break from 25 December, 2023, to 7 January, 2024. Administrative offices will remain open with limited staff. Emergency services will be available 24/7. Online classes will continue as per schedule.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">20 December, 2023</div>
+                    <h3 class="notice-title">Student Exchange Program Applications</h3>
+                    <p class="notice-content">Applications for the Spring 2024 Student Exchange Program are now being accepted. Selected students will have the opportunity to study at partner universities in Turkey, Malaysia, and Saudi Arabia.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">18 December, 2023</div>
+                    <h3 class="notice-title">Annual Sports Meet Registration</h3>
+                    <p class="notice-content">Registration for the Annual Sports Meet is now open. Events include cricket, hockey, football, athletics, basketball, volleyball, chess, and table tennis. Students can register through the Sports Department office.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">15 December, 2023</div>
+                    <h3 class="notice-title">New Course Introduction - Data Science</h3>
+                    <p class="notice-content">The Department of Mathematics and Computer Science is introducing a new interdisciplinary course in Data Science starting Spring 2024. The course will cover machine learning, statistical analysis, and big data technologies with focus on Pakistani industry applications.</p>
+                </div>
+
+                <div class="notice-card">
+                    <div class="notice-date">12 December, 2023</div>
+                    <h3 class="notice-title">Campus Wi-Fi Upgrade Completed</h3>
+                    <p class="notice-content">The campus-wide Wi-Fi network has been upgraded to provide faster internet speeds and better coverage. Students can connect using their university credentials for unlimited access. PTCL fiber optic connection ensures high-speed internet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About UCP</h3>
+                    <p>Leading Pakistani institution of higher education committed to excellence in teaching, research, and community service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="notices.html">Notices</a></p>
+                    <p><a href="exams.html">Exams</a></p>
+                    <p><a href="admissions.html">Admissions</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Lahore, Punjab, Pakistan</p>
+                    <p>📞 +92 (42) 111-123-456</p>
+                    <p>✉️ info@ucp.edu.pk</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">LinkedIn</a></p>
+                    <p><a href="#">Instagram</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 University of Central Punjab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
