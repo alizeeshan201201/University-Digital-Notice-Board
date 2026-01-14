@@ -1,10 +1,353 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Exams</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Schedules - University of Central Punjab</title>
+    <link rel="stylesheet" href="../styles/style.css">
 </head>
 <body>
-  <!-- your content -->
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="header-content">
+                <a href="index.html" class="logo">UCP - Digital Notice Board</a>
+                <nav>
+                    <div class="menu-toggle" onclick="toggleMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul id="navMenu">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="notices.html">Notices</a></li>
+                        <li><a href="exams.html" class="active">Exams</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="faculty.html">Faculty</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Title Section -->
+    <section class="welcome">
+        <div class="container">
+            <div class="welcome-content">
+                <h1 class="section-title">Examination Schedules</h1>
+                <p>Comprehensive examination schedules and important dates for all departments and programs at University of Central Punjab.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exam Schedules Section -->
+    <section>
+        <div class="container">
+            <h2 class="section-title">Spring 2024 End Semester Examinations</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Department</th>
+                            <th>Venue</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>22 January, 2024</td>
+                            <td>Monday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>CS101</td>
+                            <td>Introduction to Computer Science</td>
+                            <td>Computer Science</td>
+                            <td>Hall A-101</td>
+                        </tr>
+                        <tr>
+                            <td>22 January, 2024</td>
+                            <td>Monday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>MATH201</td>
+                            <td>Linear Algebra</td>
+                            <td>Mathematics</td>
+                            <td>Hall B-205</td>
+                        </tr>
+                        <tr>
+                            <td>23 January, 2024</td>
+                            <td>Tuesday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>PHY102</td>
+                            <td>Physics II</td>
+                            <td>Physics</td>
+                            <td>Hall A-102</td>
+                        </tr>
+                        <tr>
+                            <td>23 January, 2024</td>
+                            <td>Tuesday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>ENG103</td>
+                            <td>Technical Communication</td>
+                            <td>English</td>
+                            <td>Hall C-301</td>
+                        </tr>
+                        <tr>
+                            <td>24 January, 2024</td>
+                            <td>Wednesday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>CS202</td>
+                            <td>Data Structures & Algorithms</td>
+                            <td>Computer Science</td>
+                            <td>Hall A-103</td>
+                        </tr>
+                        <tr>
+                            <td>24 January, 2024</td>
+                            <td>Wednesday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>CHEM101</td>
+                            <td>General Chemistry</td>
+                            <td>Chemistry</td>
+                            <td>Hall B-206</td>
+                        </tr>
+                        <tr>
+                            <td>25 January, 2024</td>
+                            <td>Thursday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>ECON101</td>
+                            <td>Microeconomics</td>
+                            <td>Economics</td>
+                            <td>Hall C-302</td>
+                        </tr>
+                        <tr>
+                            <td>25 January, 2024</td>
+                            <td>Thursday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>BIO201</td>
+                            <td>Molecular Biology</td>
+                            <td>Biology</td>
+                            <td>Hall A-104</td>
+                        </tr>
+                        <tr>
+                            <td>26 January, 2024</td>
+                            <td>Friday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>CS301</td>
+                            <td>Database Management Systems</td>
+                            <td>Computer Science</td>
+                            <td>Hall B-207</td>
+                        </tr>
+                        <tr>
+                            <td>26 January, 2024</td>
+                            <td>Friday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>MATH301</td>
+                            <td>Calculus III</td>
+                            <td>Mathematics</td>
+                            <td>Hall C-303</td>
+                        </tr>
+                        <tr>
+                            <td>29 January, 2024</td>
+                            <td>Monday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>CS302</td>
+                            <td>Web Development</td>
+                            <td>Computer Science</td>
+                            <td>Hall A-105</td>
+                        </tr>
+                        <tr>
+                            <td>29 January, 2024</td>
+                            <td>Monday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>STAT201</td>
+                            <td>Probability & Statistics</td>
+                            <td>Mathematics</td>
+                            <td>Hall B-208</td>
+                        </tr>
+                        <tr>
+                            <td>30 January, 2024</td>
+                            <td>Tuesday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>CS303</td>
+                            <td>Operating Systems</td>
+                            <td>Computer Science</td>
+                            <td>Hall C-304</td>
+                        </tr>
+                        <tr>
+                            <td>30 January, 2024</td>
+                            <td>Tuesday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>PHYS201</td>
+                            <td>Quantum Mechanics</td>
+                            <td>Physics</td>
+                            <td>Hall A-106</td>
+                        </tr>
+                        <tr>
+                            <td>31 January, 2024</td>
+                            <td>Wednesday</td>
+                            <td>9:00 AM - 12:00 PM</td>
+                            <td>CS401</td>
+                            <td>Machine Learning</td>
+                            <td>Computer Science</td>
+                            <td>Hall B-209</td>
+                        </tr>
+                        <tr>
+                            <td>31 January, 2024</td>
+                            <td>Wednesday</td>
+                            <td>2:00 PM - 5:00 PM</td>
+                            <td>ENG201</td>
+                            <td>Business Communication</td>
+                            <td>English</td>
+                            <td>Hall C-305</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 4rem;">Practical Examinations Schedule</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Course Code</th>
+                            <th>Course Title</th>
+                            <th>Department</th>
+                            <th>Laboratory</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2 February, 2024</td>
+                            <td>Friday</td>
+                            <td>9:00 AM - 1:00 PM</td>
+                            <td>CS101P</td>
+                            <td>Computer Science Lab</td>
+                            <td>Computer Science</td>
+                            <td>Lab CS-101</td>
+                        </tr>
+                        <tr>
+                            <td>2 February, 2024</td>
+                            <td>Friday</td>
+                            <td>2:00 PM - 6:00 PM</td>
+                            <td>PHY102P</td>
+                            <td>Physics Lab</td>
+                            <td>Physics</td>
+                            <td>Lab PHY-201</td>
+                        </tr>
+                        <tr>
+                            <td>3 February, 2024</td>
+                            <td>Saturday</td>
+                            <td>9:00 AM - 1:00 PM</td>
+                            <td>CHEM101P</td>
+                            <td>Chemistry Lab</td>
+                            <td>Chemistry</td>
+                            <td>Lab CHEM-101</td>
+                        </tr>
+                        <tr>
+                            <td>3 February, 2024</td>
+                            <td>Saturday</td>
+                            <td>2:00 PM - 6:00 PM</td>
+                            <td>BIO201P</td>
+                            <td>Biology Lab</td>
+                            <td>Biology</td>
+                            <td>Lab BIO-201</td>
+                        </tr>
+                        <tr>
+                            <td>5 February, 2024</td>
+                            <td>Monday</td>
+                            <td>9:00 AM - 1:00 PM</td>
+                            <td>CS202P</td>
+                            <td>Data Structures Lab</td>
+                            <td>Computer Science</td>
+                            <td>Lab CS-102</td>
+                        </tr>
+                        <tr>
+                            <td>5 February, 2024</td>
+                            <td>Monday</td>
+                            <td>2:00 PM - 6:00 PM</td>
+                            <td>CS302P</td>
+                            <td>Web Development Lab</td>
+                            <td>Computer Science</td>
+                            <td>Lab CS-103</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h2 class="section-title" style="margin-top: 4rem;">Important Instructions</h2>
+            <div class="welcome-content" style="text-align: left; max-width: 100%;">
+                <ul style="list-style-type: disc; padding-left: 20px; line-height: 2;">
+                    <li>Students must arrive at the examination venue 30 minutes before the scheduled time.</li>
+                    <li>Carry your university ID card and examination hall ticket without fail.</li>
+                    <li>Mobile phones, smart watches, and electronic devices are strictly prohibited.</li>
+                    <li>Students found indulging in malpractice will be subject to disciplinary action as per HEC rules.</li>
+                    <li>No student will be allowed to enter the examination hall after 15 minutes of commencement.</li>
+                    <li>Students with special requirements should contact the examination office at least 48 hours prior.</li>
+                    <li>Examination results will be announced within 3 weeks after the completion of all exams.</li>
+                    <li>Revaluation applications must be submitted within 7 days of result declaration.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About UCP</h3>
+                    <p>Leading Pakistani institution of higher education committed to excellence in teaching, research, and community service.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p><a href="index.html">Home</a></p>
+                    <p><a href="notices.html">Notices</a></p>
+                    <p><a href="exams.html">Exams</a></p>
+                    <p><a href="admissions.html">Admissions</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📍 Lahore, Punjab, Pakistan</p>
+                    <p>📞 +92 (42) 111-123-456</p>
+                    <p>✉️ info@ucp.edu.pk</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p><a href="#">Facebook</a></p>
+                    <p><a href="#">Twitter</a></p>
+                    <p><a href="#">LinkedIn</a></p>
+                    <p><a href="#">Instagram</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 University of Central Punjab. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navMenu = document.getElementById('navMenu');
+            navMenu.classList.toggle('active');
+        }
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const navMenu = document.getElementById('navMenu');
+            const menuToggle = document.querySelector('.menu-toggle');
+            
+            if (!navMenu.contains(event.target) && !menuToggle.contains(event.target)) {
+                navMenu.classList.remove('active');
+            }
+        });
+    </script>
 </body>
 </html>
