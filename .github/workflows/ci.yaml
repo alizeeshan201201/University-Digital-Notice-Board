@@ -3,10 +3,10 @@ name: ci-wf
 on:
   push:
     branches:
-      - develop
+      - feature/faculty
   pull_request:
     branches:
-      - develop
+      - feature/faculty
 
 jobs:
   lint-job:
@@ -60,7 +60,7 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_PASSWORD }}
 
       - name: Build Docker Image
-        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest .
+        run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest_v2 .
 
       - name: Push Docker Image to Docker Hub
-        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest
+        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/uni-notice-board:latest_v2
