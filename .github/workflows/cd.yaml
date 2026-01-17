@@ -19,8 +19,6 @@ jobs:
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-        # Note: For public images, Docker login is not required, 
-        # but we include it here to use repository secrets as per assignment instructions
 
       - name: Pull Docker Image
         run: docker pull alizeeshan201201/uni-notice-board:final_v
